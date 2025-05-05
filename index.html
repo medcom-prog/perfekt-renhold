@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfekt Renhold - Profesjonell Rengjøring i Sandefjord & Oslo</title>
+    <meta name="description" content="Perfekt Renhold tilbyr profesjonell rengjøring for private og bedrifter i Sandefjord og Oslo. Vi garanterer et strålende resultat.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Consider adding a favicon link here -->
+</head>
+<body>
+
+    <header class="fade-in-start">
+        <nav class="container">
+            <div class="logo">
+                <a href="/">
+                  <img src="images/logo-removebg-preview.png" alt="Perfekt Renhold logo">
+                </a>
+              </div>
+              
+            <ul class="nav-links">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="tjenester.html">Tjenester</a></li>
+                <li><a href="om-oss.html">Om Oss</a></li>
+                <li><a href="referanser.html">Referanser</a></li>
+                <li><a href="kontakt.html" class="navbar-cta">Kontakt</a></li>
+              </ul>
+              
+            <button class="mobile-menu-button" aria-label="Åpne meny">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h1>Profesjonell Rengjøring for Hjem og Bedrift</h1>
+                <p>Vi leverer et strålende resultat i Sandefjord & Oslo.</p>
+                <a href="#contact" class="cta-button">Få et Gratis Tilbud</a>
+            </div>
+        </section>
+
+        <section id="services" class="services-overview">
+            <div class="container">
+                <h2>Våre Tjenester</h2>
+                <div class="service-cards">
+                    <div class="card">
+                        <div class="icon">🏢</div> <!-- Placeholder Icon -->
+                        <h3>Bedriftsrenhold</h3>
+                        <p>Daglig eller periodisk renhold for kontorer og bedrifter.</p>
+                        <a href="#">Les Mer</a>
+                    </div>
+                    <div class="card">
+                        <div class="icon">🏠</div> <!-- Placeholder Icon -->
+                        <h3>Privat Renhold</h3>
+                        <p>Ukentlig renhold som støvtørking, vask av gulv, kjøkken og bad.</p>
+                        <a href="#">Les Mer</a>
+                    </div>
+                    <div class="card">
+                        <div class="icon">📦</div> <!-- Placeholder Icon -->
+                        <h3>Flyttevask</h3>
+                        <p>Total innvendig vask av leilighet eller hus ved flytting.</p>
+                        <a href="#">Les Mer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="why-choose-us">
+            <div class="container">
+                <h2>Hvorfor Velge Perfekt Renhold?</h2>
+                <div class="features">
+                  
+                    <div class="feature">
+                        <div class="icon">⏱️</div> <!-- Placeholder Icon -->
+                        <h3>Lang Erfaring</h3>
+                        <p>Dyktige medarbeidere med solid erfaring.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="icon">🤝</div> <!-- Placeholder Icon -->
+                        <h3>Pålitelighet</h3>
+                        <p>Vi er punktlige og til å stole på.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="icon">📍</div> <!-- Placeholder Icon -->
+                        <h3>Lokalt Nærvær</h3>
+                        <p>Vi kjenner Sandefjord og Oslo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="references" class="testimonials">
+            <div class="container">
+                <h2>Hva Sier Kundene Våre?</h2>
+                <div class="testimonial-card">
+                     <p class="quote">"Fantastisk service og plettfritt resultat hver gang. Anbefales på det sterkeste!"</p>
+                     <p class="author">- Fornøyd Bedriftskunde, Oslo</p>
+                </div>
+                <!-- Add more testimonials or a slider structure -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact-snippet">
+            <div class="container">
+                <h2>Klar for et Rent Miljø?</h2>
+                <p>Kontakt oss i dag for et uforpliktende tilbud.</p>
+                <a href="#contact-form" class="cta-button">Kontakt Oss Nå</a> <!-- Link to a future contact form section -->
+                <p>Eller ring oss på <a href="tel:+4733474747">33 47 47 47</a></p>
+            </div>
+        </section>
+
+        <!-- Placeholder for a more detailed contact section with form -->
+        <section id="contact-form" class="contact-full">
+             <div class="container">
+                <h2>Kontakt Oss</h2>
+                <p>Fyll ut skjemaet under eller bruk kontaktinformasjonen til høyre.</p>
+                <div class="contact-content">
+                    <form>
+                        <label for="name">Navn:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">E-post:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="phone">Telefon:</label>
+                        <input type="tel" id="phone" name="phone">
+
+                        <label for="service">Tjeneste:</label>
+                        <select id="service" name="service">
+                            <option value="">Velg tjeneste...</option>
+                            <option value="bedrift">Bedriftsrenhold</option>
+                            <option value="privat">Privat Renhold</option>
+                            <option value="flyttevask">Flyttevask</option>
+                            <option value="annet">Annet</option>
+                        </select>
+
+                        <label for="message">Melding:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+
+                        <button type="submit" class="cta-button">Send Melding</button>
+                    </form>
+                    <div class="contact-info">
+                        <h3>Kontaktinformasjon</h3>
+                        <p>Telefon: <a href="tel:+4733474747">33 47 47 47</a></p>
+                        <p>E-post: <a href="mailto:post@perfekt-renhold.no">post@perfekt-renhold.no</a></p>
+                        <!-- Add address if applicable -->
+                        <!-- <p>Adresse: [Your Address Here]</p> -->
+                        <h3>Åpningstider</h3>
+                        <p>Mandag - Fredag: 08:00 - 16:00</p>
+                        <!-- Add map placeholder if needed -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                 <div class="footer-col">
+                    <h3>Perfekt Renhold</h3>
+                    <p>Profesjonell rengjøring for hjem og bedrift i Sandefjord og Oslo.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Nyttige Lenker</h3>
+                    <ul>
+                        <li><a href="#services">Våre Tjenester</a></li>
+                        <li><a href="#about">Om Oss</a></li>
+                        <li><a href="#references">Referanser</a></li>
+                        <li><a href="#contact">Kontakt Oss</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Kontakt Informasjon</h3>
+                     <p>Telefon: <a href="tel:+4733474747">33 47 47 47</a></p>
+                     <p>E-post: <a href="mailto:post@perfekt-renhold.no">post@perfekt-renhold.no</a></p>
+                </div>
+            </div>
+            <div class="copyright">
+                © <span id="current-year"></span> Perfekt Renhold. Alle rettigheter reservert.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
