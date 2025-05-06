@@ -35,15 +35,20 @@
 
     <main>
         <!-- Corrected style attribute: removed backslashes and added fallback color -->
-     
+    
+        
 
-        <section id="home" class="hero-section">
+          <section id="home" class="hero-section">
+            <video autoplay muted loop playsinline class="hero-video">
+              <source src="images/12688522_1920_1080_24fps.mp4" type="video/mp4" />
+            </video>
+          
             <div class="container">
-                <h1>Kundeomtaler</h1>
-                <p>Hør hva våre kunder sier om kvaliteten og påliteligheten til Perfekt Renhold.</p>
+              <h1 data-animate="fade-up">Kundeomtaler</h1>
+              <p data-animate="fade-up" data-delay="100">Hør hva våre kunder sier om kvaliteten og påliteligheten til Perfekt Renhold.</p>
+              <a href="#references-content" class="cta-button" data-animate="fade-up" data-delay="200">Les mer</a>
             </div>
-        </section>
-
+          </section>
 
 
         <section id="references-content" class="references-section">
@@ -80,15 +85,16 @@
         <!-- Removed inline style block, assuming styles are in style.css -->
 
         <!-- Re-use Contact Snippet Section -->
-        <section id="contact-snippet-footer" class="contact-snippet">
+        <section id="contact" class="contact-snippet">
             <div class="container">
-                <h2>Ønsker du et like Rent Resultat?</h2>
-                <p>Kontakt oss i dag for et uforpliktende tilbud på renhold.</p>
-                <a href="kontakt.html" class="cta-button">Kontakt Oss Nå</a>
-                <p>Eller ring oss på <a href="tel:+4733474747">33 47 47 47</a></p>
+              <h2>Klar for et Rent og Friskt Miljø?</h2>
+              <p>Kontakt oss i dag for et gratis og uforpliktende tilbud.</p>
+              <a href="#contact-form" class="cta-button">Kontakt Oss Nå</a>
+              <p class="alt-contact">
+                Eller ring oss direkte på <a href="tel:+4733474747">33 47 47 47</a>
+              </p>
             </div>
-        </section>
-
+          </section>
     </main>
 
     <footer>
