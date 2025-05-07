@@ -1,145 +1,147 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Våre Tjenester - Perfekt Renhold</title>
-    <meta name="description" content="Oversikt over renholdstjenester tilbudt av Perfekt Renhold for privat og bedrift i Sandefjord og Oslo, inkludert daglig renhold, flyttevask og mer.">
-    <link rel="stylesheet" href="style.css">
-    <!-- Du kan legge til et ikonbibliotek som Font Awesome her -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Våre Tjenester - Perfekt Renhold</title>
+  <meta name="description" content="Oversikt over renholdstjenester tilbudt av Perfekt Renhold for privat og bedrift i Sandefjord og Oslo, inkludert daglig renhold, flyttevask og mer.">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fontvalg -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-    <header class="fade-in-start">
-        <nav class="container">
-            <div class="logo">
-                <a href="/">
-                  <img src="images/logo-removebg-preview.png" alt="Perfekt Renhold logo">
-                </a>
-              </div>
-              
-            <ul class="nav-links">
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="tjenester.html">Tjenester</a></li>
-                <li><a href="om-oss.html">Om Oss</a></li>
-                <li><a href="referanser.html">Referanser</a></li>
-                <li><a href="kontakt.html" class="navbar-cta">Kontakt</a></li>
-              </ul>
-              
-            <button class="mobile-menu-button" aria-label="Åpne meny">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </nav>
-    </header>
+  <header class="fade-in-start">
+    <nav class="container">
+      <div class="logo">
+        <a href="/">
+          <img src="images/logo-removebg-preview.png" alt="Perfekt Renhold logo" />
+        </a>
+      </div>
 
-    <main>
-        <!-- Riktig skrevet background-style -->
-    
-   
+      <ul class="nav-links">
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="tjenester.html">Tjenester</a></li>
+        <li><a href="om-oss.html">Om Oss</a></li>
+        <li><a href="referanser.html">Referanser</a></li>
+        <li><a href="kontakt.html" class="navbar-cta">Kontakt oss</a></li>
+      </ul>
 
+      <button class="mobile-menu-button" aria-label="Åpne meny">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
 
-          <section id="home" class="hero-section">
-            <video autoplay muted loop playsinline class="hero-video">
-              <source src="images/12688522_1920_1080_24fps.mp4" type="video/mp4" />
-            </video>
-          
-            <div class="container">
-              <h1 data-animate="fade-up">Våre Renholdstjenester</h1>
-              <p data-animate="fade-up" data-delay="100">Profesjonelle løsninger for et rent og trivelig miljø, tilpasset dine behov.</p>
-              <a href="#contact" class="cta-button" data-animate="fade-up" data-delay="200">Få et Gratis Tilbud</a>
-            </div>
-          </section>
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="images/12688522_1920_1080_24fps.mp4" type="video/mp4" />
+      </video>
 
-        <section id="service-details" class="service-details-section">
-            <div class="container">
-                <h2>En Tjeneste for Ethvert Behov</h2>
-                
-                <div class="service-card-grid">
-                    
-                    <div class="card animate-on-scroll animate-fade-in-up">
-                        <div class="icon">🏢</div>
-                        <h3>Daglig Renhold (Bedrift)</h3>
-                        <p>Skreddersydd daglig renhold for kontorer og bedriftslokaler. Vi sikrer et representativt og hygienisk arbeidsmiljø.</p>
-                    </div>
+      <div class="container">
+        <h1 class="section-title" data-animate="fade-up">Våre Renholdstjenester</h1>
+        <p data-animate="fade-up" data-delay="100">Profesjonelle løsninger for et rent og trivelig miljø, tilpasset dine behov.</p>
+        <a href="#contact" class="cta-button" data-animate="fade-up" data-delay="200">Få et Gratis Tilbud</a>
+      </div>
+    </section>
 
-                    <div class="card animate-on-scroll animate-fade-in-up">
-                        <div class="icon">🏠</div>
-                        <h3>Ukentlig Renhold (Privat)</h3>
-                        <p>Få mer tid til overs med pålitelig ukentlig vask av ditt hjem. Vi tilpasser oss dine ønsker for et rent og innbydende hjem.</p>
-                    </div>
+    <!-- Tjenester -->
+    <section id="service-details" class="service-details-section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Tjenester for Ethvert Behov</h2>
+        <p class="section-subtitle animate-on-scroll" data-stagger-delay="1">Fra daglig renhold til vindusvask – vi dekker det du trenger.</p>
 
-                    <div class="card animate-on-scroll animate-fade-in-up">
-                        <div class="icon">📦</div>
-                        <h3>Flyttevask</h3>
-                        <p>Overlat den krevende flyttevasken til oss. Vi garanterer grundig og forskriftsmessig nedvask av boligen.</p>
-                    </div>
+        <div class="service-card-grid">
+          <div class="card animate-on-scroll animate-fade-in-up">
+            <div class="icon">🏢</div>
+            <h3>Daglig Renhold (Bedrift)</h3>
+            <p>Skreddersydd daglig renhold for kontorer og bedriftslokaler. Vi sikrer et representativt og hygienisk arbeidsmiljø.</p>
+          </div>
 
-                    <div class="card animate-on-scroll animate-fade-in-up">
-                        <div class="icon">🛋️</div>
-                        <h3>Tepperens</h3>
-                        <p>Gi teppene nytt liv med profesjonell rens som fjerner flekker, smuss og allergener dypt i fibrene.</p>
-                    </div>
-                    
-                    <div class="card animate-on-scroll animate-fade-in-up">
-                        <div class="icon">✨</div>
-                        <h3>Boning / Gulvbehandling</h3>
-                        <p>Beskytt gulvene og gi dem en flott glans. Riktig behandling forlenger levetiden og forenkler renholdet.</p>
-                    </div>
+          <div class="card animate-on-scroll animate-fade-in-up">
+            <div class="icon">🏠</div>
+            <h3>Ukentlig Renhold (Privat)</h3>
+            <p>Få mer tid til overs med pålitelig ukentlig vask av ditt hjem. Vi tilpasser oss dine ønsker for et rent og innbydende hjem.</p>
+          </div>
 
-                    <div class="card animate-on-scroll animate-fade-in-up">
-                        <div class="icon">🪟</div>
-                        <h3>Vindusvask</h3>
-                        <p>Få stripefrie og skinnende rene vinduer. Vi vasker innvendig og utvendig for private og bedrifter.</p>
-                    </div>
+          <div class="card animate-on-scroll animate-fade-in-up">
+            <div class="icon">📦</div>
+            <h3>Flyttevask</h3>
+            <p>Overlat den krevende flyttevasken til oss. Vi garanterer grundig og forskriftsmessig nedvask av boligen.</p>
+          </div>
 
-                </div>
-            </div>
-        </section>
+          <div class="card animate-on-scroll animate-fade-in-up">
+            <div class="icon">🛋️</div>
+            <h3>Tepperens</h3>
+            <p>Gi teppene nytt liv med profesjonell rens som fjerner flekker, smuss og allergener dypt i fibrene.</p>
+          </div>
 
-        <section id="contact" class="contact-snippet">
-            <div class="container">
-              <h2>Klar for et Rent og Friskt Miljø?</h2>
-              <p>Kontakt oss i dag for et gratis og uforpliktende tilbud.</p>
-              <a href="#contact-form" class="cta-button">Kontakt Oss Nå</a>
-              <p class="alt-contact">
-                Eller ring oss direkte på <a href="tel:+4733474747">33 47 47 47</a>
-              </p>
-            </div>
-          </section>
+          <div class="card animate-on-scroll animate-fade-in-up">
+            <div class="icon">✨</div>
+            <h3>Boning / Gulvbehandling</h3>
+            <p>Beskytt gulvene og gi dem en flott glans. Riktig behandling forlenger levetiden og forenkler renholdet.</p>
+          </div>
 
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h3>Perfekt Renhold</h3>
-                    <p>Profesjonell rengjøring for hjem og bedrift i Sandefjord og Oslo.</p>
-                </div>
-                <div class="footer-col">
-                    <h3>Nyttige Lenker</h3>
-                    <ul>
-                        <li><a href="index.html">Hjem</a></li>
-                        <li><a href="tjenester.html">Våre Tjenester</a></li>
-                        <li><a href="om-oss.html">Om Oss</a></li>
-                        <li><a href="referanser.html">Referanser</a></li>
-                        <li><a href="kontakt.html">Kontakt Oss</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Kontakt Informasjon</h3>
-                    <p>Telefon: <a href="tel:+4733474747">33 47 47 47</a></p>
-                    <p>E-post: <a href="mailto:post@perfekt-renhold.no">post@perfekt-renhold.no</a></p>
-                </div>
-            </div>
-            <div class="copyright">
-                © <span id="current-year"></span> Perfekt Renhold v/ Jamal Farah. Alle rettigheter reservert.
-            </div>
+          <div class="card animate-on-scroll animate-fade-in-up">
+            <div class="icon">🪟</div>
+            <h3>Vindusvask</h3>
+            <p>Få stripefrie og skinnende rene vinduer. Vi vasker innvendig og utvendig for private og bedrifter.</p>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Kontakt CTA -->
+    <section id="contact" class="contact-snippet">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Klar for et Rent og Friskt Miljø?</h2>
+        <p class="animate-on-scroll" data-stagger-delay="1">Kontakt oss i dag for et gratis og uforpliktende tilbud.</p>
+        <a href="#contact-form" class="cta-button animate-on-scroll" data-stagger-delay="2">Kontakt Oss Nå</a>
+        <p class="alt-contact animate-on-scroll" data-stagger-delay="3">
+          Eller ring oss direkte på <a href="tel:+4733474747">33 47 47 47</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h3 class="footer-title">Perfekt Renhold</h3>
+          <p>Profesjonell rengjøring for hjem og bedrift i Sandefjord og Oslo.</p>
+        </div>
+  
+        <div class="footer-col">
+          <h3 class="footer-title">Nyttige Lenker</h3>
+          <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="tjenester.html">Våre Tjenester</a></li>
+            <li><a href="om-oss.html">Om Oss</a></li>
+            <li><a href="referanser.html">Referanser</a></li>
+            <li><a href="kontakt.html">Kontakt Oss</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h3 class="footer-title">Kontakt Informasjon</h3>
+          <p>Telefon: <a href="tel:+4733474747">33 47 47 47</a></p>
+          <p>E-post: <a href="mailto:post@perfekt-renhold.no">post@perfekt-renhold.no</a></p>
+        </div>
+      </div>
+  
+      <div class="copyright">
+        © <span id="current-year"></span> Perfekt Renhold v/ Jamal Farah. Alle rettigheter reservert.
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="script.js"></script>
 </body>
 </html>

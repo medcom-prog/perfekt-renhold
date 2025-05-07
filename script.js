@@ -85,7 +85,10 @@ document.addEventListener("DOMContentLoaded", () => {
       { selector: ".service-item", animation: "animate-fade-in-up" },
       { selector: ".about-text", animation: "animate-fade-in-left" },
       { selector: ".about-image", animation: "animate-fade-in-right" },
-      { selector: ".testimonial-grid .testimonial-card", animation: "animate-zoom-in" }
+      { selector: ".testimonial-grid .testimonial-card", animation: "animate-zoom-in" },
+      { selector: "h2.animate-on-scroll, p.animate-on-scroll, a.animate-on-scroll", animation: "animate-fade-in-up" }
+      ,
+
     ];
   
     elementsToAnimate.forEach(config => {
@@ -110,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
         link.classList.remove("active");
       }
     });
-  
+
     // --- Animate hero inner content on page load ---
     const heroContent = document.querySelectorAll(".hero-section [data-animate]");
     heroContent.forEach((el, i) => {
