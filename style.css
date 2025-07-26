@@ -26,6 +26,9 @@
 
 html {
     scroll-behavior: smooth;
+      min-height: calc(100% + env(safe-area-inset-top));
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+           env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 body {
@@ -33,10 +36,8 @@ body {
   line-height: 1.75;
   color: var(--text-color);
   background-color: var(--primary-background-color);
-  padding-top: calc(var(--header-height) + env(safe-area-inset-top));
-  padding-left: env(safe-area-inset-left);
-  padding-right: env(safe-area-inset-right);
-  padding-bottom: env(safe-area-inset-bottom);
+    padding-top: calc(var(--header-height) + env(safe-area-inset-top));
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -287,8 +288,13 @@ header::before {
   background: linear-gradient(95deg, var(--primary-color) 0%, #5997d4 100%);
   z-index: 1001;
 }
+  @supports(padding: max(0px)) {
+  header::before {
+    padding-left: max(0px, env(safe-area-inset-left));
+    padding-right: max(0px, env(safe-area-inset-right));
+  }
+}
 
-  
   /* Header on Scroll */
   header.scrolled {
     background: rgba(255, 255, 255, 0.95);
