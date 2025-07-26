@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
   { selector: ".testimonial-grid .testimonial-card", animation: "animate-zoom-in" },
   { selector: ".timeline li", animation: "animate-fade-in-up" }, // ← denne legger du til
     { selector: ".service-description-list li", animation: "animate-on-scroll" }, // ← denne legger du til
-
+{ selector: ".logo-strip-heading", animation: "animate-fade-in-up" },
   { selector: "h2.animate-on-scroll, p.animate-on-scroll, a.animate-on-scroll", animation: "animate-fade-in-up" },
   
 ];
