@@ -153,52 +153,68 @@ section {
 .logo-strip {
   background: var(--accent-color);
   padding: 20px 0;
-  overflow: hidden;
   position: relative;
-  z-index: 2;
   text-align: center;
-    margin-top: 0;
-  margin-bottom: 0;
+  z-index: 2;
+  overflow: visible; /* Endret fra ingenting -> tillater hover uten å klippe */
 }
 
 .logo-strip-heading {
-  position: relative;
   font-size: 1.8rem;
   font-weight: 600;
-  
   margin-bottom: 15px;
   font-family: 'Bebas Neue', sans-serif;
   color: #333;
-  
 }
 
-.logos {
+.logo-track {
+  overflow: visible; /* Endret fra hidden -> forhindrer kutt ved hover */
+  position: relative;
+  width: 100%;
+}
+
+.logo-inner {
   display: flex;
-  gap: 4rem;
-  animation: scroll-logos 40s linear infinite;
-  justify-content: start;
   width: max-content;
-  padding-left: 100%;
+  animation: scroll-logos 30s linear infinite;
+  overflow: visible; /* Sørger for at bildene ikke klippes */
+  position: relative;
 }
 
-.logos img {
+.logo-inner img {
   height: 50px;
-  opacity: 1;
-  transition: all 0.3s ease;
+  margin-right: 6rem;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  pointer-events: auto;
+  z-index: 2; /* Sørger for at de ligger over andre elementer hvis nødvendig */
 }
 
-.logos img:hover {
-  transform: scale(1.4);
+.logo-inner img:hover {
+  transform: scale(1.25); /* Litt mer subtil skalering (kan settes tilbake til 1.4) */
 }
 
 @keyframes scroll-logos {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(-100%);
+  to {
+    transform: translateX(-50%);
   }
 }
+
+
+
+@keyframes scroll-logos {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
 
   .cta-button {
     display: inline-block;
