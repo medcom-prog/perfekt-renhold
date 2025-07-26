@@ -283,11 +283,13 @@ header::before {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  height: env(safe-area-inset-top);
-  background: linear-gradient(95deg, var(--primary-color) 0%, #5997d4 100%);
-  z-index: 1001;
+  width: 100%;
+  height: env(safe-area-inset-top) !important;
+  background: linear-gradient(95deg, var(--primary-color) 0%, #5997d4 100%) !important;
+  z-index: 999;
 }
+
+
   @supports(padding: max(0px)) {
   header::before {
     padding-left: max(0px, env(safe-area-inset-left));
