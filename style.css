@@ -264,19 +264,20 @@ section {
 /* --- Header & Navigation - Modernized --- */
 /* HEADER */
 header {
-    background: linear-gradient(95deg, var(--primary-color) 0%, #5997d4 100%);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: var(--header-height);
-    z-index: 1000;
-    transition: all 0.3s ease-in-out;
-    padding: 0 2rem;
-  }
+  background: linear-gradient(95deg, var(--primary-color) 0%, #5997d4 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(var(--header-height) + env(safe-area-inset-top));
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  padding: env(safe-area-inset-top) 2rem 0 2rem;
+}
+
   
   /* Header on Scroll */
   header.scrolled {
