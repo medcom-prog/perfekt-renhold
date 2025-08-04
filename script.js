@@ -77,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
    const elementsToAnimate = [
   { selector: ".service-cards .card, .service-card-grid .card", animation: "animate-fade-in-up" },
+  { selector: ".service-content .card", animation: "animate-fade-in-up" }, // Lagt til for personvernkort
   { selector: ".features .feature", animation: "animate-zoom-in" },
   { selector: ".testimonials .testimonial-card", animation: "animate-fade-in-up" },
   { selector: ".contact-full form", animation: "animate-fade-in-left" },
@@ -86,10 +87,10 @@ document.addEventListener("DOMContentLoaded", () => {
   { selector: ".about-text", animation: "animate-fade-in-left" },
   { selector: ".about-image", animation: "animate-fade-in-right" },
   { selector: ".testimonial-grid .testimonial-card", animation: "animate-zoom-in" },
-  { selector: ".timeline li", animation: "animate-fade-in-up" }, // ← denne legger du til
-    { selector: ".service-description-list li", animation: "animate-on-scroll" }, // ← denne legger du til
-{ selector: ".logo-strip-heading", animation: "animate-fade-in-up" },
-  { selector: "h2.animate-on-scroll, p.animate-on-scroll, a.animate-on-scroll", animation: "animate-fade-in-up" },
+  { selector: ".timeline li", animation: "animate-fade-in-up" },
+  { selector: ".service-description-list li", animation: "animate-on-scroll" },
+  { selector: ".logo-strip-heading", animation: "animate-fade-in-up" },
+  { selector: "h2.animate-on-scroll, h3.animate-on-scroll, p.animate-on-scroll, a.animate-on-scroll", animation: "animate-fade-in-up" }, // Oppdatert for å inkludere h3
   
 ];
 
@@ -108,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     navLinksAnchors?.forEach(link => {
       const linkPath = link.getAttribute("href").split("/").pop().split("#")[0];
-      const isActive = (currentPath === linkPath) || (currentPath === "" && linkPath === "index.html");
+      const isActive = (currentPath === linkPath) || (currentPath === "" && linkPath === "index.html") || (currentPath === "personvern.html" && linkPath === "personvern.html");
   
       if (isActive) {
         link.classList.add("active");
@@ -145,3 +146,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
   
+
