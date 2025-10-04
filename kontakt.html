@@ -7,6 +7,17 @@
   <meta name="description" content="Perfekt Renhold tilbyr profesjonell rengjøring for private og bedrifter i Sandefjord og Oslo. Vi garanterer et strålende resultat." />
   <meta name="keywords" content="renhold, flyttevask, bedrift, privat, Sandefjord, Oslo, rengjøring, profesjonell rengjøring, vaskehjelp" />
   <meta name="author" content="Perfekt Renhold" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17600774737"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17600774737');
+  </script>
+  <!-- Slutt Google tag -->
+
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="images/favicon.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -40,8 +51,27 @@
   <main>
     <section id="contact-form" class="contact-full">
       <div class="container">
-        <h2 class="section-title animate-on-scroll">Kontakt Oss</h2>
-        <p class="animate-on-scroll">Fyll ut skjemaet under eller bruk kontaktinformasjonen til høyre.</p>
+      
+       <h2 class="section-title animate-on-scroll">Kontakt Oss</h2>
+<p class="animate-on-scroll">Fyll ut skjemaet under eller bruk kontaktinformasjonen til høyre.</p>
+
+<!-- KOMBINERT TILBUDSSEKSJON -->
+<section class="tilbud-annonse animate-on-scroll">
+  <div class="tilbud-box">
+    <h3>Er du på jakt etter profesjonelt renhold?</h3>
+    <p><strong>Vi hjelper bedrifter og privatpersoner i Vestfold og Oslo med pålitelig og fleksibel rengjøring.</strong></p>
+    <ul>
+      <li>✅ <strong>Kostnadsfri befaring</strong> – vi kommer og kartlegger behovene dine, helt uforpliktende</li>
+      <li>✅ <strong>Skreddersydd renholdsplan</strong> – vi tilpasser oss deres lokaler og behov</li>
+      <li>✅ <strong>20 % rabatt</strong> på første måned for bedriftskunder med fast avtale</li>
+      <li>✅ <strong>Fornøydgaranti</strong> – vi gir oss ikke før du er 100 % fornøyd</li>
+    </ul>
+    <p><strong>Ta kontakt i dag – vi gleder oss til å høre fra deg!</strong></p>
+  </div>
+</section>
+
+
+
         <div class="contact-content">
 
           <form id="contactForm" action="https://formspree.io/f/movleenn" method="POST">
@@ -109,6 +139,11 @@
           form.reset();
           form.style.display = "none";
           thankYouMessage.style.display = "block";
+
+          // Hvis du ønsker å måle skjema-innsending som konvertering i Google Ads,
+          // må du legge til riktig "send_to" med konverterings-ID/label fra Google Ads.
+          // Eksempel (bytt ut 'AW-17600774737/CONVERSION_LABEL' med din label):
+          // gtag('event', 'conversion', {'send_to': 'AW-17600774737/CONVERSION_LABEL'});
         } else {
           alert("Noe gikk galt. Vennligst prøv igjen.");
         }
